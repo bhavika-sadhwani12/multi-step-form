@@ -1,0 +1,126 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+}
+
+.form-container {
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.form-container h1 {
+  margin-bottom: 20px;
+  color: #222;
+}
+
+form {
+  width: 100%;
+  max-width: 450px;
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px 14px;
+
+  border: 1px solid #ccc;
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+.error-message {
+  margin: 12px 0 0;
+
+  font-size: 14px;
+  color: #dc2626;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+
+  margin-top: 22px;
+}
+
+.form-actions button {
+  flex: 1;
+
+  padding: 12px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #2563eb;
+  color: white;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.form-actions button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.form-actions button:active {
+  transform: translateY(0);
+}
+
+.form-actions .submit-btn {
+  background: #16a34a;
+}
+
+.form-actions .submit-btn:hover {
+  background: #15803d;
+}
